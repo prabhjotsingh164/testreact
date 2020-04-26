@@ -22,15 +22,15 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebPackPlugin({
-			template: './src/index.html',
+			template: './index.html',
 			filename: './index.html'
 		})
 	], 
 	resolve: {
 		alias: {
 			components: path.resolve(__dirname, 'src/js/components'),
-			css: path.resolve(__dirname, 'src/css/'),
-			img: path.resolve(__dirname, 'src/img/'),
+			css: path.resolve(__dirname, 'css/'),
+			img: path.resolve(__dirname, 'img/'),
 		}
 	}
 };
